@@ -1,0 +1,35 @@
+import React from "react";
+import ReactDom from "react-dom/client";
+import LOGIN24 from "./LOGIN24.js"
+
+const root = ReactDom.createRoot(document.getElementById("root"));
+root.render(
+
+    <React.StrictMode>
+        <LOGIN24/>
+    </React.StrictMode>
+)
+
+
+
+
+
+
+
+
+
+
+
+
+import React from 'react'
+import "./style/style.css";
+import Logo from "./Logo.png";
+export default function Login() {
+  return (
+    <>
+
+    </>
+  );
+}
+
+

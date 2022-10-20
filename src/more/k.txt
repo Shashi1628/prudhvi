@@ -1,0 +1,986 @@
+// import {
+//     Chart as ChartJS,
+//     CategoryScale,
+//     LinearScale,
+//     BarElement,
+//     Title,
+//     Tooltip,
+//     Legend,
+//   } from "chart.js";
+//   import { Bar } from "react-chartjs-2";
+//   import React from "react";
+//   ChartJS.register(
+//     CategoryScale,
+//     LinearScale,
+//     BarElement,
+//     Title,
+//     Tooltip,
+//     Legend
+//   );
+//   export default function Graph() {
+//     const options = {
+//       responsive: true,
+//       plugins: {
+//         legend: {
+//           position: "top",
+//         },
+//         title: {
+//           display: true,
+//           text: "Chart.js Bar Chart",
+//         },
+//       },
+//     };
+   
+//     const labels = [
+//       "January",
+//       "February",
+//       "March",
+//       "April",
+//       "May",
+//       "June",
+//       "July",
+//     ];
+//     //   labels.map((itm, indx)=>{
+//     //     indx =0 & itm "January"
+//     //     .
+//     //     .
+//     //     .
+//     //     indx 6 itm = "July"
+//     //   })
+   
+//     const data = {
+//       labels,
+//       datasets: [
+//         {
+//           label: "Dataset 1",
+//           // data: labels.map((itm, indx) => indx*6),//[]0-49
+//           data: [10, 50, 26, 30, 99, 10, 5],
+//           backgroundColor: "rgba(255, 99, 132, 0.5)",
+//         },
+//         {
+//           label: "Dataset 2",
+//           data: labels.map(() => 150),
+//           backgroundColor: "rgba(53, 162, 235, 0.5)",
+//         },
+//       ],
+//     };
+   
+//     return (
+//       <>
+//         Test
+//         <Bar options={options} data={data} />
+//       </>
+//     );
+//   }
+   
+  
+  
+  
+// import React from "react";
+// import "./style/Salesdashboard.css";
+// import {AiOutlineDown} from "react-icons/ai"
+// import {BsThreeDots} from "react-icons/bs"
+// export default function Salesdashboard(){
+//     const  [show,setShow]=useState(false)
+//     const handleClick=(e)=>{
+//         setShow(!show)
+//     };
+//     return (
+//         <>
+//         <div className="Salesdashboard_outer">
+//             <div className="Salesdashboard_outer_column1">
+//                    <div className="Salesdashboard_outer_column1_title" >
+//                    <AiOutlineDown/>
+//                    <label>TODO</label>  
+//                    </div>  
+//                    <div className="Salesdashboard_outer_column1_item">
+//                          <div className="Salesdashboard_outer_column1_item_title"
+//                          onClick={(e)=>{
+//                             handleClick(e);
+//                          }}
+//                          >
+//                          <AiOutlineDown/>
+//                          <label>Test Task firstone</label>
+//                          <BsThreeDots/>
+//                          </div>
+                         
+//                        {show?(<div className="Salesdashboard_outer_column1_item_details" >
+//                             <div><label>Event</label></div>
+//                             <div><label>Task</label></div>
+//                             <div><label>Lead</label></div>
+//                          </div>):(<></>)
+//                          }
+//                          <div className="Salesdashboard_outer_column1_thirdbox" >
+//                          <AiOutlineDown/>
+//                          <label>Test Task firstone</label>
+//                          <BsThreeDots/>
+//                          </div>
+                    
+//                    <div className="Salesdashboard_outer_column1_add" >
+//                     <label>+</label>
+//                    </div>
+//             </div>
+           
+
+
+//             <div className="Salesdashboard_outer_column1">   
+              
+//             </div> 
+
+
+//             <div className="Salesdashboard_outer_column1">
+//             </div> 
+//          </div>
+//         </>
+//     );
+// } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+css
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    margin: 0;
+}
+
+.signup_outer {
+    background-color: rgb(210, 203, 241);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_Outer_row1_inner {
+    height: 80vh;
+    max-width: 400px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.signup_Outer_row1_inner_row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_Outer_row1_inner_row1 h2 {
+    margin-left: 5px;
+    color: rgb(56, 51, 51);
+}
+
+.signup_Outer_row1_inner_row2 {
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.signup_Outer_row1_inner_row3 {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-left: 25px;
+}
+
+.signup_Outer_row1_inner_row4{
+    display: flex;
+    flex-direction: row;
+}
+
+.Firstname,
+.Lastname {
+    margin-left: 25px;
+    margin-right: 15px;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup_Outer_row1_inner_row5,
+.signup_Outer_row1_inner_row6,
+.signup_Outer_row1_inner_row7 {
+
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.signup_Outer_row1_inner_row5 input,
+.signup_Outer_row1_inner_row6 input,
+.signup_Outer_row1_inner_row7 input {
+    padding-left: 50px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup_outer_inner_row8 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.signup_Outer_row1_inner_row8 label{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup_Outer_row1_inner_row8 span {
+    color: blueviolet;
+}
+
+.signup_Outer_row1_inner_row9 {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_Outer_row1_inner_row9 button {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    margin: 0;
+}
+
+.signup_outer {
+    background-color: rgb(210, 203, 241);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_outer_inner {
+    height: 80vh;
+    max-width: 400px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.signup_outer_inner_row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_outer_inner_row1 h2 {
+    margin-left: 5px;
+    color: rgb(56, 51, 51);
+}
+
+.signup_outer_inner_row2 {
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.signup_outer_inner_row3 {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-left: 25px;
+}
+
+.signup_outer_inner_row4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.signup_outer_inner_row4_left input,
+.signup_outer_inner_row4_right input {
+    margin-left: 25px;
+    margin-right: 15px;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup_outer_inner_row5,
+.signup_outer_inner_row6,
+.signup_outer_inner_row7 {
+
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.signup_outer_inner_row5 input,
+.signup_outer_inner_row6 input,
+.signup_outer_inner_row7 input {
+    padding-left: 50px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup_outer_inner_row8 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.signup_outer_inner_row8 text {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup_outer_inner_row8 span {
+    color: blueviolet;
+}
+
+.signup_outer_inner_row9 {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_outer_inner_row9 button {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* 
+
+
+<div className="signup_Outer_row1">
+<div className="signup_Outer_row1_inner">
+            <div className="signup_Outer_row1_inner_row1">
+            <img  src={Logo}></img>
+            <label>Logo</label>
+            </div>
+            <div className="signup_Outer_row1_inner_row2">
+            <label>Welcome!👋</label>
+            </div>
+            <div className="signup_Outer_row1_inner_row3">
+            <label>Please signup to your account</label>
+            </div>
+            <div className="signup_Outer_row1_inner_row4">
+            <input type="text" placeholder="FirstName"/>
+            <input type="text" placeholder="LastName"/>
+            </div>
+            <div className="signup_Outer_row1_inner_row5">
+            <input type="text" placeholder="Email"/>
+            </div>
+            <div className="signup_Outer_row1_inner_row6">
+            <input type="password" placeholder="Password"/>
+            </div>
+            <div className="signup_Outer_row1_inner_row7">
+            <input type="password" placeholder="Re-Password"/>
+            </div>
+            <div className="signup_Outer_row1_inner_row8">
+            <input type="checkbox"/>
+            <label>By clicking on Register,you agree to our <span>Terms and Conditions</span> of Use</label>
+            </div>
+            <div className="signup_Outer_row1_inner_row9">
+            <label>Register</label>
+            </div>
+</div>
+</div>
+ */
+
+
+
+
+
+/* 
+body{
+    margin:0;
+}
+.signup_Outer{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+/* .signup_Outer_row1{
+    max-width: 400px;
+    height:80vh;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+ } */
+ /* .signup_Outer_row1_inner{
+    height: 80vh;
+    max-width: 400px;
+    width:30%;
+    background-color:rgb(255,255,255);
+    box-shadow: 0px 0px 8px 0.5px rgb(133, 142, 145);
+    border-radius: 4px;
+ }
+ .signup_Outer_row1_inner_row1{
+    display:flex;
+   justify-content: center;
+   text-align: center;
+   
+}
+.signup_Outer_row1_inner_row1 label{
+     width:20px;
+     margin:20px;
+     font-size:30px;
+     margin-left: 10px;
+
+}
+.signup_Outer_row1_inner_row1 img{
+     width: 40px;
+     height: 40px;
+     padding-top: 15px;
+     margin-left: 30px;
+     margin-left:  0px;
+}
+ .signup_Outer_row1_inner_row2{
+    font-size: 25px;
+    min-width: 100%;
+    padding-left: 0px;
+    margin-bottom: 10px;
+ 
+
+ }
+.signup_Outer_row1_inner_row2{
+    margin-left: 30px;
+ }
+ .signup_outer_row1_inner_row3{
+    margin-left: 30px;
+    color: gray;
+    margin-top: 5px;
+}
+.signup_Outer_row1_inner_row4 input{
+    padding-left: 20px;
+    border: none;
+    margin-left: 20px;
+    outline:none;
+    border:0.5px solid lightgray; 
+}
+.signup_Outer_row1_inner_row5 input{
+    padding-left: 20px;
+    border: none;
+    margin-left: 20px;
+    outline:none;
+    border:0.5px solid lightgray; 
+}
+ 
+ */
+
+
+ /* // import "./style/stylesignup.css";
+ // import Logo from "./Logo.png";
+ // import React from 'react'
+ // export default function Signin() {
+ //   return (
+ //     <>
+ 
+ // <div className="signup_Outer">
+ 
+ //      <div className="signup_outer_row1">
+ //             <div className="signup_Outer_row1_inner">
+ //                         <div className="signup_Outer_row1_inner_row1">
+ //                         <img  src={Logo}></img>
+ //                         <label><h2>Logo</h2></label>
+ //                         </div>
+ //                         <div className="signup_Outer_row1_inner_row2">
+ //                         <label>Welcome!👋</label>
+ //                         </div>
+ //                         <div className="signup_Outer_row1_inner_row3">
+ //                         <label>Please signup to your account</label>
+ //                         </div>
+ //                         <div className="signup_Outer_row1_inner_row4">
+ //                         <input className="FirstName" type="text" placeholder="FirstName"/>
+ //                         <input  className="LastName" type="text" placeholder="LastName"/>
+ //                         </div>
+ //                         <div className="signup_Outer_row1_inner_row5">
+ //                         <input type="text" placeholder="Email"/>
+ //                         </div>
+ //                         <div className="signup_Outer_row1_inner_row6">
+ //                         <input type="password" placeholder="Password"/>
+ //                         </div>
+ //                         <div className="signup_Outer_row1_inner_row7">
+ //                         <input type="password" placeholder="Re-Password"/>
+ //                         </div>
+ //                         <div className="signup_Outer_row1_inner_row8">
+ //                         <input type="checkbox"/>
+ //                         <label >By clicking on Register,you agree to our <span>Terms and Conditions</span> of Use</label>
+ //                         </div>
+ //                         <div className="signup_Outer_row1_inner_row9">
+ //                         <label>Register</label>
+ //                         </div>
+ //            </div>
+ //     </div>
+ 
+ //  </div>
+ 
+ //     </>
+ //   );
+ // }
+  */ */ */
+  /* body {
+    margin: 0;
+}
+
+.signup_outer {
+    background-color: rgb(240, 221, 221); 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    
+}
+
+.signup_outer_inner {  
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 20px 5%;
+}
+
+.signup_outer_inner_row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_outer_inner_row1 h2 {
+    margin-left: 5px;
+    color: rgb(56, 51, 51);
+}
+
+.signup_outer_inner_row2 {
+    margin-bottom: 10px; 
+}
+
+.signup_outer_inner_row3 {
+    margin-bottom: 30px;
+    padding-bottom: 10px; 
+}
+
+.signup_outer_inner_row4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.signup_outer_inner_row4 input{
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+   
+}
+ 
+
+.signup_outer_inner_row5,
+.signup_outer_inner_row6,
+.signup_outer_inner_row7 {
+
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.signup_outer_inner_row5 input,
+.signup_outer_inner_row6 input,
+.signup_outer_inner_row7 input {
+    padding-left: 50px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup_outer_inner_row8 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.signup_outer_inner_row8 label {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup_outer_inner_row8 span {
+    color: blueviolet;
+}
+
+.signup_outer_inner_row9 {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_outer_inner_row9 button {
+    padding: 5px;
+    width: 90%;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}  */
+
+
+
+
+import React from "react";
+import "./style/Salesdashboard.css";
+import { AiOutlineDown } from "react-icons/ai";
+import { BsThreeDots } from "react-icons/bs";
+export default function Salesdashboard() {
+  const [show, setShow] = useState(false);
+  const handleClick = (e) => {
+    setShow(!show);
+  };
+  return (
+    <>
+      <div className="Salesdashboard_outer">
+        <div className="Salesdashboard_outer_column1">
+          <div className="Salesdashboard_outer_column1_title">
+            <AiOutlineDown />
+            <label>TODO</label>
+          </div>
+          <div className="Salesdashboard_outer_column1_item">
+            <div
+              className="Salesdashboard_outer_column1_item_title"
+              onClick={(e) => {
+                handleClick(e);
+              }}
+            >
+              <AiOutlineDown />
+              <label>Test Task firstone</label>
+              <BsThreeDots />
+            </div>
+
+            {show ? (
+              <div className="Salesdashboard_outer_column1_item_details">
+                <div>
+                  <label>Event</label>
+                </div>
+                <div>
+                  <label>Task</label>
+                </div>
+                <div>
+                  <label>Lead</label>
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
+          </div>
+
+          <div className="Salesdashboard_outer_column1_thirdbox">
+            <AiOutlineDown />
+            <label>Test Task firstone</label>
+            <BsThreeDots />
+          </div>
+
+          <div className="Salesdashboard_outer_column1_add">
+            <label>+</label>
+          </div>
+        </div>
+
+        <div className="Salesdashboard_outer_column1">
+          <div className="Salesdashboard_outer_column1_title">
+            <AiOutlineDown />
+            <label>TODO</label>
+          </div>
+          <div className="Salesdashboard_outer_column1_item">
+            <div
+              className="Salesdashboard_outer_column1_item_title"
+              onClick={(e) => {
+                handleClick(e);
+              }}
+            >
+              <AiOutlineDown />
+              <label>Test Task firstone</label>
+              <BsThreeDots />
+            </div>
+
+            {show ? (
+              <div className="Salesdashboard_outer_column1_item_details">
+                <div>
+                  <label>Event</label>
+                </div>
+                <div>
+                  <label>Task</label>
+                </div>
+                <div>
+                  <label>Lead</label>
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
+          </div>
+
+          <div className="Salesdashboard_outer_column1_thirdbox">
+            <AiOutlineDown />
+            <label>Test Task firstone</label>
+            <BsThreeDots />
+          </div>
+
+          <div className="Salesdashboard_outer_column1_add">
+            <label>+</label>
+          </div>
+        </div>
+
+        <div className="Salesdashboard_outer_column1">
+          <div className="Salesdashboard_outer_column1_title">
+            <AiOutlineDown />
+            <label>TODO</label>
+          </div>
+          <div className="Salesdashboard_outer_column1_item">
+            <div
+              className="Salesdashboard_outer_column1_item_title"
+              onClick={(e) => {
+                handleClick(e);
+              }}
+            >
+              <AiOutlineDown />
+              <label>Test Task firstone</label>
+              <BsThreeDots />
+            </div>
+
+            {show ? (
+              <div className="Salesdashboard_outer_column1_item_details">
+                <div>
+                  <label>Event</label>
+                </div>
+                <div>
+                  <label>Task</label>
+                </div>
+                <div>
+                  <label>Lead</label>
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
+          </div>
+
+          <div className="Salesdashboard_outer_column1_thirdbox">
+            <AiOutlineDown />
+            <label>Test Task firstone</label>
+            <BsThreeDots />
+          </div>
+
+          <div className="Salesdashboard_outer_column1_add">
+            <label>+</label>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+
+
+import React from "react";
+import "./style/Salesdashboard.css";
+import { AiOutlineDown } from "react-icons/ai";
+import {BsThreeDots}  from "react-icons/bs"
+export default function Salesdashboard1() {
+//     const [show, setShow] = useState(false);
+//   const handleClick = (e) => {
+//     setShow(!show);
+// };
+  return (
+    <>
+      <div className="Salesdashboard_outer">
+        <div className="Salesdashboard_outer_column1">
+          <div className="Salesdashboard_outer_column1_title">
+            <AiOutlineDown />
+            <label>TODO</label>
+          </div>
+          <div className="Salesdashboard_outer_column1_item">
+            <div className="Salesdashboard_outer_column1_item_title"
+            onClick={(e) => {
+                handleClick(e);
+              }}
+            >
+              <AiOutlineDown />
+              <label>Test Task firstone</label>
+              <BsThreeDots />
+            </div>
+       
+            {/* {show ? ( */}
+              <div className="Salesdashboard_outer_column1_item_details">
+                <div>
+                  <label>Event</label>
+                </div>
+                <div>
+                  <label>Task</label>
+                </div>
+                <div>
+                  <label>Lead</label>
+                </div>
+              </div>
+             
+              {/* ) : (
+              <></>
+            )} */}
+          
+            <div className="Salesdashboard_outer_column1_thirdbox"> 
+            <AiOutlineDown />
+            <label>Test Task firstone</label>
+            <BsThreeDots />
+          </div>
+
+          <div className="Salesdashboard_outer_column1_add">
+            <label>+</label>
+          </div>
+            
+            
+        
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+
+ .Salesdashboard_outer{
+    background-color: orange;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+.Salesdashboard_outer_column1{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.Salesdashboard_outer_column1_title{
+    display: flex;
+    background-color: azure;
+    flex-direction: row;
+}
+
+.Salesdashboard_outer_column1_add{
+    background-color: white;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    justify-content: center;
+} 

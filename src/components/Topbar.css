@@ -1,0 +1,225 @@
+
+.Topbar_header{
+   
+    background-color: #Fafafa;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.Topbar_icon_circle{
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+.Topbar_Bell_Circle,
+.Topbar_cancel_circle{
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+}
+
+.Topbar_col1{
+    display: flex;
+    flex-direction: row;
+    color: #4D5E80;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Topbar_col1 label{
+    padding-left: 60px;
+    padding-top: 5px;
+}
+.Topbar_col2{
+    color: #7D8FB3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Topbar_col2 ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: -30px;
+}
+.Topbar_col2 ul li{
+    padding-top: 5px;
+    padding-left: 35px;
+    padding-right: 25px;
+    list-style-type: none;
+}
+.Topbar_col3{
+    width: 285px;
+    height: 6vh;
+    margin-top: 12px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-right: 10px;
+    color: #CED2DE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Topbar_col3 input{
+    border: none;
+    outline: none;
+    font-size:9px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-right: 20px;
+    width: 170px;
+    color :#CED2DE
+}
+.Topbar_searchIcon{
+    font-size: 25px;
+        margin-right: 20px;
+    
+}
+.Topbar_col4{
+    padding-top: 9px;
+    margin-left: 0px;
+    color:#6B7A99;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.Topbar_profileIcon{
+    color: rgb(109, 109, 109); 
+}
+.Topbar_BellIcon,
+.Topbar_cancelIcon{
+    
+    color:#b7c2d7;
+}
+
+.Topbar_profileIcon{
+    font-size: 25px;
+    font-weight: 50px;
+    margin-left: 35px;
+    margin-top: 10px;
+    color: #b7c2d7
+}
+.Topbar_col4_label{
+    
+        margin-left: 70px;
+        margin-top: -24px;
+        font-weight: 00px;
+        color:#6B7A99
+
+
+}
+.Topbar_col5{
+    padding-top: 3px;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: row;
+}
+.Topbar_cancel_circle{
+    margin-left: 35px;
+}
+.Topbar_content{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 200px;
+    position: absolute;
+}
+.Topbar_content_cola{
+    background-color: white;
+    width: 22%;
+    margin-right: 40px;
+   
+}
+.Topbar_content_cola_list{
+    padding: 30px;
+    border: 1px solid rgb(235, 234, 234);
+    display: flex;
+    align-items: center;
+    
+}
+.Topbar_content_cola_list label{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.Topbar_content_cola_list1{
+    height: 60px;
+    border: 1px solid  rgb(235, 234, 234);
+
+    margin-right: 20px;
+   width: 292px;
+   
+}
+.Topbar_content_colb{
+    background-color: white;
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 20%;
+   
+}
+.Topbar_label_head{
+    font-size: 20px;
+}
+.Topbar_content_colb_list1{
+    padding: 10px 20px 10px 10px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+.Topbar_caricon{
+    display: flex;
+    position: absolute;
+    
+}
+.Topbar_bookicon{
+    display: flex;
+    position: absolute;
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+.Topbar_content_colb_list1 label{
+    padding-left: 35px;
+    display: flex;
+    flex-direction: row;
+}
+.Topbar_content_colb_list{
+    padding-top: 20px;
+}
+.Topbar_content_colc{
+    background-color: white;
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 20%;
+}
+.Topbar_content_cold{
+    background-color: white;
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 20%;
+}
+.Topbar_bookicon{
+    color: #C499FF;
+}
+.Topbar_caricon{
+      color: #C499FF;
+}
+.topbar_3dots{
+    font-size: 22px;
+    color:  #7D8FB3;
+}

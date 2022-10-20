@@ -1,0 +1,40 @@
+
+.SalesDashboard_inner{
+    background-color: red;
+}
+.SalesDashboard_inner_head{
+    background-color: gray;
+    text-align: center;
+}
+.SalesDashboard_content{
+    background-color: rgb(164, 164, 105);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+.SalesDashboard_content_left{
+    background-color: gray;
+    min-width: 200px;
+}
+.SalesDashboard_content_left_head{
+    background-color: white;
+}
+.SalesDashboard_content_left_task_head{
+    margin-bottom: 10px;
+}
+.SalesDashboard_content_left_task_list{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.SalesDashboard_content_left_task_listAdd{
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+

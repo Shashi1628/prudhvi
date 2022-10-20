@@ -1,0 +1,54 @@
+
+body{
+    margin: 0;
+}
+.model_page{
+    display: flex;
+    flex-direction: row;
+    margin-left: 679px;
+    
+    margin-top: 164px;
+
+}
+.model_modalcontainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.235);
+}
+.model_modal{
+    background-color:rgb(14, 14, 52);
+    padding: 150px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.model_modelbutton{
+    /* border: none;
+    border-radius: 20px;
+    width: 10%;
+    padding: 10px;
+    margin-left: 644px;
+    color: white;
+    background-color: rgb(223, 18, 193) */
+    outline: none;
+    border-radius: 4px;
+    width: 7%;
+    height: 30px;
+    margin-left: 666px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-color: ##9155FD;
+    background-color: #9155FD;
+}
+.model_firstbutton{
+    margin-left: 690px;
+    margin-top: 5px;
+}
